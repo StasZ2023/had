@@ -1,0 +1,93 @@
+*{
+    padding:0;
+    margin:0;
+}
+@keyframes div{
+    0%{
+        transform: scale(0.8);
+        text-shadow: 
+    0 0 7px #000000,
+    0 0 10px rgb(0, 0, 0),
+    0 0 20px red,
+    0 0 0px #000000,
+    0 0 0px pink,
+    0 0 0px pink,
+    0 0 0px rgb(174, 0, 255),
+    0 0 0px pink,
+    0 0 0px rgb(0, 255, 242);
+    ;
+    }
+    50%{
+        transform: scale(1.3);
+        text-shadow: 
+    0 0 17px #000000,
+    0 0 110px rgb(0, 0, 0),
+    0 0 120px red,
+    0 0 121px #000000,
+    0 0 142px pink,
+    0 0 182px pink,
+    0 0 192px rgb(174, 0, 255),
+    0 0 202px pink,
+    0 0 251px rgb(0, 255, 242);
+    ;
+    }
+    100%{
+        text-shadow: 
+    0 0 7px #000000,
+    0 0 10px rgb(0, 0, 0),
+    0 0 20px red,
+    0 0 0px #000000,
+    0 0 0px pink,
+    0 0 0px pink,
+    0 0 0px rgb(174, 0, 255),
+    0 0 0px pink,
+    0 0 0px rgb(0, 255, 242);
+    ;
+        transform: scale(0.8);
+    }
+}
+div{
+    font-size: 130px;
+    /* text-align: center; */
+    
+    padding-top:50px;
+    background-color:black;
+    height:100vh;
+    background: linear-gradient(black,rgb(255, 0, 234));
+    
+
+
+}
+span{
+    display: block;
+    animation-name: div;
+    animation-timing-function: ease;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    padding-left:30px;
+}
+@keyframes p {
+    0%{
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.4);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    
+}
+p{
+    position: absolute;
+    left:40%;
+    top:0;
+    animation-name:p ;
+    animation-timing-function: ease;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
